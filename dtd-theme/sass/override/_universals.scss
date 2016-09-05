@@ -1,0 +1,55 @@
+* {
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+}
+
+ul, li {
+	font-family: 'Hind';
+}
+
+body {
+	min-height: 100vh;
+}
+
+a {
+	color: rgba(207, 0, 15, 1);
+}
+
+h1 {
+	color: $light-purple;
+}
+
+h1, h2, h3 {
+	font-family: 'Montserrat';
+	
+}
+
+p {
+	font-family: 'Hind';
+	color: $beige;
+}
+
+.purple {
+	color: $purple;
+	font-weight: 700;
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+#content {
+	float: left;
+	width: 100%;
+	min-height: 100vh;
+	padding-bottom: 0;
+	background: $light-black; 
+	
+	@include breakpoint(tablet) {
+		position: relative;
+		float: left;
+		width: 100%;
+		left: 0;
+	}
+	
+}

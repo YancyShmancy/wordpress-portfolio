@@ -1,0 +1,49 @@
+.comments-title {
+	font-family: 'Montserrat';
+	font-size: 1.2em;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#comments {
+	padding: 0 50px;
+}
+
+.comment-respond {
+	font-family: 'PT Serif';
+	font-weight: 400;
+}
+
+.comment-list {
+	margin-left: 0;
+	list-style-type: none;
+	padding: 0;
+	
+	.comment {
+		font-family: 'PT Serif';
+		padding: 15px 0;
+		border-bottom: 1px solid rgba(0,0,0,0.3);
+		
+		b, time {
+			font-family: 'Montserrat';
+		}
+	}
+}
+
+input.submit {
+	color: black;
+	background: white;
+	box-shadow: none;
+	outline: none;
+	font-family: 'Montserrat';
+	border: 1px solid black;
+	padding: 10px 16px;
+	border-radius: 18px;
+	
+	&:hover {
+		background: white; 
+		box-shadow: none;
+		color: rgba(207, 0, 15, 1);
+		border: 1px solid rgba(207, 0, 15, 1);
+	}
+}
