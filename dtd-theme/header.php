@@ -18,6 +18,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,700|Lobster|Hind:300,400' rel='stylesheet' type='text/css'>
 <script src="https://use.fontawesome.com/ba03945a8f.js"></script>
+
 <?php wp_head(); ?>
 </head>
 

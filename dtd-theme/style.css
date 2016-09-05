@@ -920,6 +920,10 @@ p {
   }
 }
 
+*:focus {
+  outline: none !important;
+}
+
 .project {
   float: left;
   position: relative;
@@ -1161,6 +1165,12 @@ section .content {
   width: 100%;
 }
 
+@media (max-width: 64em) {
+  section .content {
+    padding: 30px 30px;
+  }
+}
+
 section p {
   float: left;
 }
@@ -1171,6 +1181,12 @@ section p {
 
 #aboutMe .content {
   padding: 30px 120px;
+}
+
+@media (max-width: 64em) {
+  #aboutMe .content {
+    padding: 30px 30px;
+  }
 }
 
 #aboutMe .long-summary {
@@ -1185,6 +1201,12 @@ section p {
   padding: 0 5px;
   background: #000000;
   color: #9286C4;
+}
+
+@media (max-width: 64em) {
+  #aboutMe .long-summary {
+    width: 100%;
+  }
 }
 
 #aboutMe .list-container {
@@ -1237,6 +1259,13 @@ section p {
   float: left;
 }
 
+@media (max-width: 64em) {
+  #aboutMe .img-container {
+    width: 80%;
+    margin: 20px 10%;
+  }
+}
+
 #aboutMe .img-container img {
   position: absolute;
   top: 20px;
@@ -1248,6 +1277,15 @@ section p {
   -webkit-box-shadow: 5px 7px 5px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 7px 5px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 5px 7px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 64em) {
+  #aboutMe .img-container img {
+    position: relative;
+    float: left;
+    width: 100%;
+    transform: translateX(-50%) rotate(0);
+  }
 }
 
 #aboutMe h2 {
@@ -1262,6 +1300,48 @@ section p {
 #aboutMe ul.testimonials {
   float: left;
   position: relative;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#aboutMe ul.testimonials li {
+  float: left;
+  width: 50%;
+  padding: 20px 50px;
+}
+
+#aboutMe ul.testimonials li p, #aboutMe ul.testimonials li h4, #aboutMe ul.testimonials li h5 {
+  display: block;
+  margin: 0;
+}
+
+#aboutMe ul.testimonials li p {
+  font-size: 1.2em;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+#aboutMe ul.testimonials li p span {
+  font-size: 1.5em;
+  color: #9286C4;
+}
+
+#aboutMe ul.testimonials li h4 {
+  font-size: 1em;
+  text-align: right;
+  color: #9286C4;
+}
+
+#aboutMe ul.testimonials li h4 span {
+  color: white;
+}
+
+#aboutMe ul.testimonials li h5 {
+  text-transform: uppercase;
+  text-align: right;
+  color: white;
 }
 
 #aboutMe .testimonial-summary {
@@ -1282,6 +1362,128 @@ section p {
 
 #skills .content {
   padding: 30px 0;
+}
+
+#contact form {
+  float: left;
+  width: 50%;
+  padding-right: 50px;
+}
+
+@media (max-width: 64em) {
+  #contact form {
+    width: 100%;
+    margin: 10px 0;
+    padding-right: 0;
+  }
+}
+
+#contact label {
+  float: left;
+  position: relative;
+  display: block;
+  width: inherit;
+  padding: 5px 7px;
+  margin-left: -20px;
+  background-color: #552752;
+  color: white;
+}
+
+#contact label span {
+  display: none;
+  color: red;
+}
+
+#contact label::after {
+  width: 100%;
+  height: 2px;
+  background-color: #552752;
+  content: "";
+  position: absolute;
+  bottom: 0;
+}
+
+#contact input, #contact textarea {
+  border-radius: 0;
+  text-align: left;
+  background-color: rgba(240, 240, 240, 0.1);
+  border: 0;
+  border-bottom: 2px solid #9286C4;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#contact input {
+  width: 100%;
+}
+
+#contact input[type="submit"] {
+  margin-top: 0;
+  width: 150px;
+  box-shadow: none;
+  padding: 10px 10px;
+  font-size: 1em;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #552752;
+  color: white;
+}
+
+#contact textarea {
+  height: 64px;
+  width: 100%;
+}
+
+#contact .social-media {
+  float: left;
+  position: relative;
+  width: 50%;
+  padding-left: 50px;
+  text-align: center;
+}
+
+@media (max-width: 64em) {
+  #contact .social-media {
+    width: 100%;
+    padding-left: 0;
+    height: 200px;
+  }
+}
+
+#contact .social-media p {
+  margin-bottom: 0;
+  font-size: 1.1em;
+}
+
+#contact .social-media a {
+  padding: 0 20px;
+}
+
+#contact .social-media a.github {
+  color: white;
+}
+
+#contact .social-media a.linkedin {
+  color: #1985BC;
+}
+
+#contact .social-media a.facebook {
+  color: #3B5998;
+}
+
+#contact .social-media a:hover {
+  color: #9286C4;
+}
+
+#contact .social-media a.resume {
+  width: 300px;
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  background-color: #552752;
+  margin-left: -150px;
+  margin-top: 20px;
 }
 
 .entry {

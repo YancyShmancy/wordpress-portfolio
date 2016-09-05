@@ -128,8 +128,8 @@
 				?>
 
 				<li>
-					<p><? the_field("dtd_testimonial_quote"); ?>"</p>
-					<h4><? the_field("dtd_testimonial_author"); ?></h4>
+					<p><span>"</span><? the_field("dtd_testimonial_quote"); ?><span>"</span></p>
+					<h4><span>-</span> <? the_field("dtd_testimonial_author"); ?></h4>
 					<h5><? the_field("dtd_testimonial_job"); ?></h5>
 				</li>
 
